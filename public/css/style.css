@@ -18,6 +18,7 @@ body {
     rgba(20, 72, 140, 1) 90%
   );
   background-attachment: fixed;
+  padding-top: 35px;
 }
 
 button {
@@ -87,13 +88,20 @@ li {
 /* nav */
 .navbar2 {
   display: block;
-  background-color: white;
   padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: inherit;
+  z-index: 1000;
+  border-bottom: 1px solid #0d6efd;
 }
 .navbar2 ul {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
 }
 .navbar2 a {
   display: block;
@@ -202,7 +210,7 @@ li {
   position: relative;
   font-style: italic;
   font-size: 0.9rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 /* btn */
 .btx {
