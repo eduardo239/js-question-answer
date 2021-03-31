@@ -1,0 +1,31 @@
+<%- include('partials/header.ejs') %>
+  </head>
+  <body>
+    <div class="container">
+      <%- include('partials/navbar.ejs') %>
+      <div class="to-ask-container">
+        <h2>Perguntar</h2>
+        
+          <div class="to-ask">
+            <div class="bg"></div>
+            <form method="POST" action="/salvar">
+              
+            <div class="field">
+              <label for="q-title">Título da pergunta</label>
+              <input type="text" name="titulo" id="q-title">
+            </div>
+            
+            <div class="field">
+              <label for="q-content">Conteúdo da pergunta</label>
+              <textarea cols="7" name="descricao" id="q-content"></textarea>
+            </div>
+            
+            <div class="question-control">
+              <input type="submit" class="btx my-2" value="Perguntar">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+<%- include('partials/footer.ejs')%>

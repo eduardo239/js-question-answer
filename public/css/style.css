@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,400;0,600;1,200;1,400&family=Indie+Flower&display=swap');
+
+/*
+
+Photo by ilya mondryk on Unsplash
+
+
+font-family: 'Indie Flower', cursive;
+*/
+
+body {
+  font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+  margin-bottom: 5rem;
+  height: 100vh;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(7, 121, 222, 1) 0%,
+    rgba(20, 72, 140, 1) 90%
+  );
+  background-attachment: fixed;
+}
+
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  font-weight: 600;
+  margin: 2rem 0;
+  position: relative;
+  color: white;
+}
+h2::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 1rem;
+  background-color: white;
+  position: absolute;
+  bottom: 2px;
+  right: -1rem;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+h4 {
+  font-weight: 600;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+textarea,
+input {
+  width: 100%;
+  border: 2px solid #0d0d0d;
+  background-color: #fff;
+  outline: none;
+  padding: 0.5rem;
+}
+textarea:focus,
+input:focus,
+textarea:active,
+input:active {
+  border: 2px solid #0d0d0d;
+  background-color: #fff;
+}
+.field {
+  margin-bottom: 1rem;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+
+/* nav */
+.navbar2 {
+  display: block;
+  background-color: white;
+  padding: 0;
+}
+.navbar2 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar2 a {
+  display: block;
+  padding: 0.25rem;
+  margin: 0 0.75rem;
+  border-bottom: 3px solid transparent;
+}
+.navbar2 a:hover {
+  border-bottom: 3px solid #0d6efd;
+}
+/* question */
+.questions,
+.questions-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.question,
+.to-ask {
+  border: 2px solid #0d0d0d;
+  background-color: rgba(244, 253, 0, 1);
+  padding: 1rem;
+  display: inline-table;
+  position: relative;
+  margin: 1rem;
+  min-width: 18rem;
+  max-width: 30rem;
+}
+.question-header {
+  border: 2px solid #0d0d0d;
+  background-color: #fff;
+  color: #0d0d0d;
+  letter-spacing: 0.02rem;
+  padding: 1rem;
+  display: block;
+  position: relative;
+  margin-bottom: 1rem;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(234, 249, 249, 0.67) 0.1%,
+    rgba(239, 249, 251, 0.63) 90.1%
+  );
+}
+.question-content {
+  padding: 1rem;
+  border: 2px solid #0d0d0d;
+  background-color: #fff;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(234, 249, 249, 0.67) 0.1%,
+    rgba(239, 249, 251, 0.63) 90.1%
+  );
+}
+.question-control {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.question-answer {
+  position: relative;
+}
+
+.question-icon {
+  position: absolute;
+  top: -2rem;
+  left: 1rem;
+  background-color: #fff;
+  border: 2px solid black;
+  color: black;
+  z-index: 100;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+/* ans */
+.answer-container,
+.to-ask-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.answers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer {
+  display: inline-block;
+  padding: 1rem;
+  border: 2px solid #0d0d0d;
+  background-color: #d7fcf5;
+  color: #0d0d0d;
+  margin: 1rem;
+  max-width: 40rem;
+  position: relative;
+  font-style: italic;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+/* btn */
+.btx {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border: 2px solid #0d0d0d;
+  outline: none;
+  background-color: #fa233e;
+  background-image: radial-gradient(
+    circle 972.6px at 10% 20%,
+    rgba(243, 0, 75, 1) 0%,
+    rgba(255, 93, 75, 1) 90%
+  );
+  color: #fff;
+  position: relative;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: 0.1s linear;
+}
+.btx:hover,
+.btx:active,
+.btx:focus {
+  background-color: #fff;
+  color: #0d0d0d;
+  background-image: radial-gradient(
+    circle 993px at 0.5% 50.5%,
+    rgba(137, 171, 245, 0.37) 0%,
+    rgba(245, 247, 252, 1) 100.2%
+  );
+  box-shadow: -3px -3px 0 0 black;
+}
+
+/* fx */
+.bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #0d0d0d;
+  background-color: #fff;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  z-index: -100;
+}
+
+.close {
+  display: block;
+
+  border: 2px solid black;
+  background-image: radial-gradient(
+    circle 972.6px at 10% 20%,
+    rgba(243, 0, 75, 1) 0%,
+    rgba(255, 93, 75, 1) 90%
+  );
+  position: absolute;
+  font-size: 0.75rem;
+  font-weight: 600;
+  right: -1rem;
+  top: 1.5rem;
+  z-index: 10;
+}
+
+.close a {
+  color: #fff;
+  display: block;
+  padding: 0.5rem;
+}
+.close:hover {
+  background-color: #0d0d0d;
+  color: #f2275d;
+  background-image: radial-gradient(
+    circle 993px at 0.5% 50.5%,
+    rgba(137, 171, 245, 0.37) 0%,
+    rgba(245, 247, 252, 1) 100.2%
+  );
+}
+
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+  font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+}
